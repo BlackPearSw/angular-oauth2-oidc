@@ -1,3 +1,60 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## 15.1.0 (2023-11-13)
+
+
+### Features
+
+* **automatic silent refresh:** stopAutomaticRefresh stops all timers. ([8ab853b](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/8ab853bf38dd162060d7b6cbd18f7b4fd5a84f18))
+* **code-flow:** allow using implicit flow by setting useSilentRefresh to true ([93902a5](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/93902a5808bb9b75a41d4bde44c6ab763bcfa9f6))
+* introduce DateTimeProvider ([0c0a4a7](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/0c0a4a7a2574c8c134fa839f7ccdee06273a0676))
+* **logout:** postLogoutRedirectUri should not default to redirectUri ([ff7d1d9](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/ff7d1d915aa19f87bcb1c2d18ac3eb280db78d3b))
+* **oauth-service:** pass custom url params to logOut ([4607d55](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/4607d55c6bdf608a32a2a029feac9eb37bfb493d))
+* **oauth-service:** revokeTokenAndLogout with cust params ([026dcb3](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/026dcb38e4299afbab8faff1d54dba94cadc1aa6))
+* provide standalone api ([e38c99c](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/e38c99c5f70f23fad892328e2a6f01f1e813af4c))
+* remove jsrsasign dependancy ([77cb37a](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/77cb37abfd08762a59b221257ed8d5d5b7c795d4))
+* **sample:** also use new idsvr 4 for implicit flow demo to prevent issues with same site cookies ([58c6354](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/58c63541bc7d83d72c30577da2b68ac2d1dc35b7))
+* **session checks:** Session checks work now for code flow too. Pls see Docs for details. ([4bf8901](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/4bf89014d8cc5d50ed716500e3f3ad265b4ae2db))
+* support JWT response on userinfo endpoint ([da16494](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/da1649499376863b0ebf884748176f3b38d91899))
+* **token-revocation:** also revoke refresh_token ([429ed2c](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/429ed2c5b50c60ac857ff0ffe84c1d7fc995c6dd))
+* update for angular 13 ([d95d7da](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/d95d7da788e2c1390346c66de62dc31f10d2b852))
+* Upgrade to angular 8 ([31c6273](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/31c6273b388af7e796a9ad663e346f1e33ff331c))
+
+
+### Bug Fixes
+
+* [#687](https://github.com/BlackPearSw/angular-oauth2-oidc/issues/687) ([e2599e0](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/e2599e071307ae1efe1592c83bb3b7a01642a61d))
+* [#728](https://github.com/BlackPearSw/angular-oauth2-oidc/issues/728) ([51e438a](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/51e438a942773948f17ab108332d704b459fd789)), closes [/github.com/manfredsteyer/angular-oauth2-oidc/issues/728#issuecomment-808969225](https://github.com/BlackPearSw//github.com/manfredsteyer/angular-oauth2-oidc/issues/728/issues/issuecomment-808969225)
+* clear location.hash only if it is present ([c2b2753](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/c2b2753943d59a6b4b5149f1003371338ac1a210)), closes [#970](https://github.com/BlackPearSw/angular-oauth2-oidc/issues/970)
+* clock skew bug ([f30098d](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/f30098df4213671871cf9cd5667ca9751ff29ddd))
+* **code flow:** Fixed code flow for IE 11 ([0f03d39](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/0f03d393aac9fe4e26444a73884dd154318d530f))
+* correctly handle ? and & in location replacements ([70fd826](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/70fd8268832aba954956542e37896252dde5cdab))
+* correctly use clockSkew for hasValid[Access|Id]Token ([68238fb](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/68238fb6ea4a2f88ada97b03b13663d1454b001c))
+* Disable nonce validation for id token for e2e tests ([f5bd96c](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/f5bd96ca81ec6b7af868de72b1098541264347cf))
+* fix scope/state removal for implicit flow with hash ([9e257d0](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/9e257d0d267942d716607f2a1c78700bd9d6e9ef))
+* in code flow pass options to error handler ([c9a2c55](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/c9a2c557178af26154adfbcf39e3db2d12ee0503)), closes [#972](https://github.com/BlackPearSw/angular-oauth2-oidc/issues/972)
+* issue with sha256 and prod build [#1120](https://github.com/BlackPearSw/angular-oauth2-oidc/issues/1120) ([b44e19a](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/b44e19a2f5c758e3b5dab259336ee1974bfe99c8))
+* **js-sha256:** wrap logic in a function to prevent optimizer destroy lib ([ae26fba](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/ae26fba258cc3effd693d23473ff51b63005b9ae))
+* **jwks:** update jsrsasign dependency to 10.2.0 ([a05bd8a](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/a05bd8a106035acb51fb06fd62e17de0de8decb4)), closes [#1061](https://github.com/BlackPearSw/angular-oauth2-oidc/issues/1061)
+* **lib:** copying LICENSE file to output build ([e89aa6d](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/e89aa6d90054dc4ad20f234db2107e82b11a9386))
+* loadDiscoveryDocumentAndLogin should pass state into initLoginFlow ([132c624](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/132c62426cfe07ddaf0eebb85bdf062ee49e4a06))
+* missing HttpModule dependency ([7eac8ae](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/7eac8ae5cd1fd549f3933c30790f4b802c2c09f0))
+* multiplying calls to token endpoint in code flow ([59f65d2](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/59f65d2eb9cd1a724301fb3de0b3def796920bd4))
+* reduce strictness of nonce equality check ([238564d](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/238564d558c310c9f17da7f32e3c1a8d1fdd609f))
+* Refresh tokens with a plus sign get corrupted before sending to token endpoint ([2204c5a](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/2204c5a307640d11b847a0c266b44ca2c18fd9a7))
+* **revoketokenandlogout:** 'customParameters' should accept boolean ([9761bad](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/9761baded0d85bd831947de4607296fb029579ab))
+* **revoketokenandlogout:** explicit way to revoke an access token ([c799ead](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/c799eadbfa616d459af8be1a667499834745d78f))
+* run tokensetup outside ngzone ([07bb62d](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/07bb62d06abb84ef2da010977d07bfd2a3805b16))
+* **sample:** make sense of the guard ([1cae011](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/1cae011532dc91a250368c95120812d2f78f8109))
+* **sample:** use hash-based routing ([3f44eca](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/3f44ecae157305c56ae377fcd6d2df8dfde8adf5))
+* **session state:** save session_state also when using code flow ([8fa99ff](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/8fa99ff721ea2b08f28bc5e9fa3e48a459e2a59a))
+* **state:** passing an url with a querystring as the state, e. g. url?x=1 ([71b705c](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/71b705cb5105f6dfb49aabc55607745b881c5dc3))
+* this.config.customTokenParameters is undefined ([ee6c55a](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/ee6c55a54f54b550a44e3e97e186fd5be4801bb2))
+* typo ([3d331f2](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/3d331f2166340db43f0aaca42ce8abc4913cd027))
+* While Using POPUP mode, we click on login button multiple time it opens multiple popup instead of focusing already opened ([bbff95b](https://github.com/BlackPearSw/angular-oauth2-oidc/commit/bbff95b86173fa9262bf962e7fa4cfe4121b787e))
+
 ## [12.0.0](https://github.com/manfredsteyer/angular-oauth2-oidc/compare/v10.0.3...v10.0.2) (2021-07-16)
 
 
