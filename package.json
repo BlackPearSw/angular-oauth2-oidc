@@ -1,5 +1,5 @@
 {
-  "name": "angular-oauth2-oidc",
+  "name": "@blackpear/angular-oauth2-oidc",
   "version": "15.0.0",
   "license": "MIT",
   "scripts": {

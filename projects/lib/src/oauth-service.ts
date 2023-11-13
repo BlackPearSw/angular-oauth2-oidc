@@ -2236,7 +2236,7 @@ export class OAuthService extends AuthConfig implements OnDestroy {
       return Promise.reject(err);
     }
 
-    if (!skipNonceCheck && claims.nonce !== savedNonce) {
+    if (!skipNonceCheck && claims.nonce != savedNonce) {
       const err = 'Wrong nonce: ' + claims.nonce;
       this.logger.warn(err);
       return Promise.reject(err);
